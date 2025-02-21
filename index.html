@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Media App Flex Layout</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css" media="screen" />
+</head>
+<body>
+    
+    <div class="layout">
+    
+        <div class="header">
+            <div class="logo">
+                <img src="images/logo.png" />
+            </div>
+            <div class="accountnav">
+                Welcome, <span>[USERNAME]</span><br/>
+                <a href="#">Account</a> | <a href="#">Logout</a>
+            </div>
+        </div>
+        
+        <nav>
+            <a href="#" class="active">Movies</a> / <a href="#">TV</a> / <a href="#">Music</a> / <a href="#">Video Games</a><br/>
+            <div class="abcs">
+                <a href="#">#</a> | 
+                <a href="#">A</a> | 
+                <a href="#">B</a> | 
+                <a href="#">C</a> | 
+                <a href="#">D</a> | 
+                <a href="#">E</a> | 
+                <a href="#">F</a> | 
+                <a href="#">G</a> | 
+                <a href="#">H</a> | 
+                <a href="#">I</a> | 
+                <a href="#">J</a> | 
+                <a href="#">K</a> | 
+                <a href="#">L</a> | 
+                <a href="#">M</a> | 
+                <a href="#">N</a> | 
+                <a href="#">O</a> | 
+                <a href="#">P</a> | 
+                <a href="#">Q</a> | 
+                <a href="#">R</a> | 
+                <a href="#">S</a> | 
+                <a href="#">T</a> | 
+                <a href="#">U</a> | 
+                <a href="#">V</a> | 
+                <a href="#">W</a> | 
+                <a href="#">X</a> | 
+                <a href="#">Y</a> | 
+                <a href="#">Z</a> |
+                <a href="#" class="active">Favorites</a>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search" />
+                <input type="button" value="Submit" />
+            </div>
+        </nav>
+        
+        <div class="container">
+        
+            <div class="main">
+                <div class="item">
+                    <img src="images/movies/2-fast-2-furious.jpg" />
+                    <div class="item-detail">
+                        <span class="item-title">2 Fast 2 Furious</span><br/>
+                        <span class="item-nav"><a href="#">Add</a> | <a href="#">Remove</a></span>
+                    </div>
+                    <div class="moviehover"></div>
+                </div>
+                <div class="item">
+                    <img src="images/movies/24-redemption.jpg" />
+                    <div class="item-detail">
+                        <span class="item-title">24: Redemption</span><br/>
+                        <span class="item-nav"><a href="#">Add</a> | <a href="#">Remove</a></span>
+                    </div>
+                    <div class="moviehover"></div>
+                </div>
+                <div class="item">
+                    <img src="images/movies/batman-ninja.jpg" />
+                    <div class="item-detail">
+                        <span class="item-title">Batman Ninja</span><br/>
+                        <span class="item-nav"><a href="#">Add</a> | <a href="#">Remove</a></span>
+                    </div>
+                    <div class="moviehover"></div>
+                </div>
+                <div class="item">
+                    <img src="images/movies/cars.jpg" />
+                    <div class="item-detail">
+                        <span class="item-title">CARS</span><br/>
+                        <span class="item-nav"><a href="#">Add</a> | <a href="#">Remove</a></span>
+                    </div>
+                    <div class="moviehover"></div>
+                </div>
+                <div class="item">
+                    <img src="images/movies/collateral.jpg" />
+                    <div class="item-detail">
+                        <span class="item-title">Collateral</span><br/>
+                        <span class="item-nav"><a href="#">Add</a> | <a href="#">Remove</a></span>
+                    </div>
+                    <div class="moviehover"></div>
+                </div>
+                <div class="item">
+                    <img src="images/movies/district-9.jpg" />
+                    <div class="item-detail">
+                        <span class="item-title">District 9</span><br/>
+                        <span class="item-nav"><a href="#">Add</a> | <a href="#">Remove</a></span>
+                    </div>
+                    <div class="moviehover"></div>
+                </div>
+                <div class="item">
+                    <img src="images/movies/fast-and-the-furious.jpg" />
+                    <div class="item-detail">
+                        <span class="item-title">The Fast and the Furious</span><br/>
+                        <span class="item-nav"><a href="#">Add</a> | <a href="#">Remove</a></span>
+                    </div>
+                    <div class="moviehover"></div>
+                </div>
+                <div class="item">
+                    <img src="images/movies/fast-and-furious-5.jpg" />
+                    <div class="item-detail">
+                        <span class="item-title">Fast and the Furious 5</span><br/>
+                        <span class="item-nav"><a href="#">Add</a> | <a href="#">Remove</a></span>
+                    </div>
+                    <div class="moviehover"></div>
+                </div>
+                <div class="item">
+                    <img src="images/movies/final-fantasy-the-spirits-within.jpg" />
+                    <div class="item-detail">
+                        <span class="item-title">Final Fantasy: The Spirits Within</span><br/>
+                        <span class="item-nav"><a href="#">Add</a> | <a href="#">Remove</a></span>
+                    </div>
+                    <div class="moviehover"></div>
+                </div>
+                <div class="item">
+                    <img src="images/movies/final-fantasy-xv-kingsglaive.jpg" />
+                    <div class="item-detail">
+                        <span class="item-title">Final Fantasy XV: Kingslaive</span><br/>
+                        <span class="item-nav"><a href="#">Add</a> | <a href="#">Remove</a></span>
+                    </div>
+                    <div class="moviehover"></div>
+                </div>
+                <div class="item">
+                    <img src="images/movies/hot-fuzz.jpg" />
+                    <div class="item-detail">
+                        <span class="item-title">Hot Fuzz</span><br/>
+                        <span class="item-nav"><a href="#">Add</a> | <a href="#">Remove</a></span>
+                    </div>
+                    <div class="moviehover"></div>
+                </div>
+                <div class="item">
+                    <img src="images/movies/interstellar.jpg" />
+                    <div class="item-detail">
+                        <span class="item-title">Interstellar</span><br/>
+                        <span class="item-nav"><a href="#">Add</a> | <a href="#">Remove</a></span>
+                    </div>
+                    <div class="moviehover"></div>
+                </div>
+                <div class="item">
+                    <img src="images/movies/james-bond-skyfall.jpg" />
+                    <div class="item-detail">
+                        <span class="item-title">James Bond: Skyfall</span><br/>
+                        <span class="item-nav"><a href="#">Add</a> | <a href="#">Remove</a></span>
+                    </div>
+                    <div class="moviehover"></div>
+                </div>
+                <div class="item">
+                    <img src="images/movies/john-wick.jpg" />
+                    <div class="item-detail">
+                        <span class="item-title">John Wick</span><br/>
+                        <span class="item-nav"><a href="#">Add</a> | <a href="#">Remove</a></span>
+                    </div>
+                    <div class="moviehover"></div>
+                </div>
+                <div class="item">
+                    <img src="images/movies/kung-fu-panda.jpg" />
+                    <div class="item-detail">
+                        <span class="item-title">Kung Fu Panda</span><br/>
+                        <span class="item-nav"><a href="#">Add</a> | <a href="#">Remove</a></span>
+                    </div>
+                    <div class="moviehover"></div>
+                </div>
+                <div class="item">
+                    <img src="images/movies/lilo-and-stitch.jpg" />
+                    <div class="item-detail">
+                        <span class="item-title">Lilo &amp; Stitch</span><br/>
+                        <span class="item-nav"><a href="#">Add</a> | <a href="#">Remove</a></span>
+                    </div>
+                    <div class="moviehover"></div>
+                </div>
+                <div class="item">
+                    <img src="images/movies/need-for-speed.jpg" />
+                    <div class="item-detail">
+                        <span class="item-title">Need for Speed</span><br/>
+                        <span class="item-nav"><a href="#">Add</a> | <a href="#">Remove</a></span>
+                    </div>
+                    <div class="moviehover"></div>
+                </div>
+                <div class="item">
+                    <img src="images/movies/sonic-the-hedgehog-2.jpg" />
+                    <div class="item-detail">
+                        <span class="item-title">Sonic the Hedgehog 2</span><br/>
+                        <span class="item-nav"><a href="#">Add</a> | <a href="#">Remove</a></span>
+                    </div>
+                    <div class="moviehover"></div>
+                </div>
+                <div class="item">
+                    <img src="images/movies/star-wars-episode-1-the-phantom-menace.jpg" />
+                    <div class="item-detail">
+                        <span class="item-title">Star Wars: Episode I</span><br/>
+                        <span class="item-nav"><a href="#">Add</a> | <a href="#">Remove</a></span>
+                    </div>
+                    <div class="moviehover"></div>
+                </div>
+                <div class="item">
+                    <img src="images/movies/star-wars-rogue-one.jpg" />
+                    <div class="item-detail">
+                        <span class="item-title">Star Wars: Rogue One</span><br/>
+                        <span class="item-nav"><a href="#">Add</a> | <a href="#">Remove</a></span>
+                    </div>
+                    <div class="moviehover"></div>
+                </div>
+                <div class="item">
+                    <img src="images/movies/super-mario-bros.jpg" />
+                    <div class="item-detail">
+                        <span class="item-title">Super Mario Bros</span><br/>
+                        <span class="item-nav"><a href="#">Add</a> | <a href="#">Remove</a></span>
+                    </div>
+                    <div class="moviehover"></div>
+                </div>
+                <div class="item">
+                    <img src="images/movies/the-gentlemen.jpg" />
+                    <div class="item-detail">
+                        <span class="item-title">The Gentlemen</span><br/>
+                        <span class="item-nav"><a href="#">Add</a> | <a href="#">Remove</a></span>
+                    </div>
+                    <div class="moviehover"></div>
+                </div>
+                <div class="item">
+                    <img src="images/movies/the-thing.jpg" />
+                    <div class="item-detail">
+                        <span class="item-title">The Thing</span><br/>
+                        <span class="item-nav"><a href="#">Add</a> | <a href="#">Remove</a></span>
+                    </div>
+                    <div class="moviehover"></div>
+                </div>
+                <div class="item">
+                    <img src="images/movies/top-gun-maverick.jpg" />
+                    <div class="item-detail">
+                        <span class="item-title">Top Gun: Maverick</span><br/>
+                        <span class="item-nav"><a href="#">Add</a> | <a href="#">Remove</a></span>
+                    </div>
+                    <div class="moviehover"></div>
+                </div>
+            </div>
+            <!--
+            <div class="aside">
+                
+            </div>
+            -->
+            
+        </div>
+        
+        <div class="footer">
+            <div class="footer-about">
+                <h1>About</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum in mi non tristique.<br/><br/>
+                    &copy; 2025 <strong>OHY</strong>MEDIA    
+                </p>
+            </div>
+            <div class="footer-contact">
+                <h1>Contact</h1>
+                <p>
+                    4645 North Awesome St.<br/>
+                    British Columbia, <strong>Canada</strong><br/>
+                    V0H 1N1<br/><br/>
+                    <a href="mailto:srs@sean-sutherland.com">srs@sean-sutherland.com</a>
+                </p>
+            </div>
+            <div class="footer-content-type">
+                <h1>Content Type</h1>
+                <ul>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">TV</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Video Games</a></li>
+                </ul>
+            </div>
+            <div class="footer-content-category">
+                <h1>Content Category</h1>
+                <ul>
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Animated</a></li>
+                    <li><a href="#">Comedy</a></li>
+                    <li><a href="#">Racing</a></li>
+                    <li><a href="#" style="color:gray;">More...</a></li>
+                </ul>
+            </div>
+            <div class="footer-account">
+                <h1>Account</h1>
+                <ul>
+                    <li><a href="#">Account Settings</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    
+    </div>
+    
+</body>
+</html>
