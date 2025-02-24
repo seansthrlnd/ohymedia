@@ -6,11 +6,6 @@
         body{
         padding:0px; margin:0px; 
         background-color:#151515; 
-        /*
-        background-image: url("images/asfalt-light.png");
-        background-repeat:repeat;
-        background-attachment:fixed;
-        */
         font-family:arial;
         color:gray;
         }
@@ -61,56 +56,85 @@
         .layout{
         display:flex;
         flex-direction:column;
+        align-items:center;
         }
         
-            .header, nav, .footer{padding:20px;}
-        
+            .header, .fma, .footer{padding:20px;}
+                        
             .header{
-            display:flex; 
+            display:flex;
             align-items:center;
+            max-width:1200px;
             }
-                .logo{
-                height:56px;
-                }
-                
+            
                 .accountnav{
                 margin-left:auto;
-                text-align:right;
                 }
                     .accountnav span{
                     font-weight:bold;
                     color:#f5f5f5 ;
                     }
-                
+
                     .accountnav a{
                     display:inline-block;
-                    margin-top:15px;
                     padding:5px 15px;
                     border-radius:5px;
                     background-color: rgba(66,66,66,.5);
                     }
-                
-            nav{
+            
+            .fma{
+            height:50vh;
+            display:flex; 
+            flex-direction:column;
+            align-items:center;
+            justify-content: center;
+            align-self:stretch;
+            gap:20px;
+            background-image:url("images/banner-fast6.jpg");
+            background-position:top;
+            background-attachment:fixed;
+            background-size:cover;
+            position:relative; z-index:1;
             }
             
-                nav a{
-                color:gray;
+                .fmaoverlay {
+                background-color:rgba(20, 20, 20, 0.9);
+                position:absolute;z-index:2;
+                top:0;
+                left:0;
+                width:100%;
+                height:100%;
+                }
+        
+                .logo{
+                position:relative; z-index:3;
                 }
                 
-                nav a.active{
-                color:#ff0072; 
-                text-decoration:underline;
+                nav{
+                text-align:center;
+                position:relative; z-index:3;
                 }
-                
-                nav .abcs{
-                padding-top:10px;
-                line-height:25px;
-                }
-                
-                .search{margin-top:20px;}
+
+                    nav a{
+                    color:#fff;
+                    }
+
+                    nav a.active{
+                    color:#ff0072; 
+                    text-decoration:underline;
+                    }
+
+                    nav .abcs{
+                    line-height:25px;
+                    margin-top:20px;
+                    }
+
+                .search{position:relative; z-index:3;}
         
             .container{
             display:flex;
+            max-width:1143px; /* WHY? */
+            margin-top:10px;
             }  
         
                 .main{
@@ -127,56 +151,49 @@
                     flex-direction:column;
                     align-items:center;
                     align-self:stretch;
-                    flex:1 0 130px;
+                    flex:1 0 160px;
                     border-radius:10px;
-                    padding:20px 10px;
+                    padding:10px 5px;
                     background-color: rgba(66,66,66,.5);
                     position:relative;
-                    cursor:pointer;
+                    cursor: pointer;
+                    
                     }
+                    
+                        .item:hover{
+                        box-shadow: 
+                        inset 10px 24px 40px 0px #151515, 
+                        inset -10px -24px 40px 0px #151515, 
+                        inset 20px -10px 40px 0px #151515, 
+                        inset -20px 10px 40px 0px #151515;
+                        }
+                    
                         .item img{
-                        max-width:130px;
+                        max-width:160px;
                         margin-bottom:10px;
+                        -webkit-transition-property:all;
+                        -webkit-transition-duration:0.3s;
+                        -webkit-transition-timing-function:ease;
                         }
                         
+                        .item:hover img{transform: scale(1.04);}
+                        
                         .item-detail{
-                        max-width:130px;
+                        max-width:160px;
                         text-align:center;
                         }
                             .item-title{font-size:13px; color:#f5f5f5;}
                             .item-nav{font-size:10px;}
-                        
-                        .item div.moviehover{
-                        display:none;
-                        width:30px; height:25px;
-                        background-image: url("images/heart.png");
-                        position:absolute; 
-                        bottom:50%;
-                        }.item:hover div.moviehover{display:block;}
-        
-                .aside{
-                display:flex;
-                flex:0 0 200px;
-                text-align:center;
-                justify-content:center;
-                }
-                
-                    .aside a{
-                    display:block;
-                    padding:20px;
-                    border-radius:10px;
-                    margin:10px 0px;
-                    background-color: rgba(66,66,66,.5);
-                    }
         
             .footer{
             display:flex; 
             justify-content:center; 
             align-content:center;
             gap:50px;
+            max-width:1200px;
             }
                 .footer div{
-                flex:1 0 0;
+                flex:1 1 33%;
                 }
                 
                 .footer h1{
